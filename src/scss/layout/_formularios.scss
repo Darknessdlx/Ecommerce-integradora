@@ -1,0 +1,65 @@
+.formulario {
+    border: none;
+    margin-top: 4rem;
+
+    .informacion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .izquierda {
+        width: 100%;
+    }
+
+    .informacionDerecha {
+        width: 100%;
+    }
+
+    label {
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+    }
+
+
+    input:not([type="submit"]), 
+    textarea,
+    select {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: $blanco;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    textarea {
+        height: 25rem;
+    }
+
+    input[type="radio"] {
+        margin: 0;
+        width: auto;
+    }
+
+    .boton-azul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@include tablet {
+    .informacion {
+        display: flex;
+        flex-wrap: wrap;
+
+        .izquierda {
+            width: 45%;
+        }
+
+        .informacionDerecha {
+            width: 45%;
+        }
+    }
+}

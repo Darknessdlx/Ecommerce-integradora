@@ -1,0 +1,17 @@
+.seccion {
+    margin-top: $separacion * 0.5;
+    margin-bottom: $separacion * 0.5;
+}
+.contenido-anuncio {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.alinear-derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.w-100 {
+    width: 100%;
+}

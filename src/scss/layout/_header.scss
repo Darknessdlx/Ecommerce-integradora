@@ -1,0 +1,30 @@
+.webp .inicio {
+    background-color: black;
+
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: $negro;
+    padding: 1rem 0 0 0;
+
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 16rem;
+        }
+    ;
+    }}
+
+.titulo-logo {
+    color: white;
+    font-size: 6rem;
+    font-family: Montserrat, sans-serif;
+}

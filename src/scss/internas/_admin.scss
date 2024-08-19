@@ -1,0 +1,42 @@
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    color: $blanco;
+    margin: 1rem 0;
+    border-radius: 12px;
+
+    &.error {
+        background-color: $rojo;
+    }
+
+    &.exito {
+        background-color: $verde;
+    }
+}
+
+table.productos {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    text-align: center;
+    align-items: center;
+
+    thead {
+        background-color: $azul;
+
+
+        th {
+            color: $blanco;
+            padding: 2rem 1rem;
+            border: 1px black solid;
+        }
+    }
+
+    .imagen-tabla {
+        width: 10rem;
+    }
+}
+
+.imagen-small {
+    width: 20rem;
+}

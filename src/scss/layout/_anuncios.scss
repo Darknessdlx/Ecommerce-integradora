@@ -1,0 +1,45 @@
+@include tablet {
+    .contenedor-anuncios {
+        @include grid(3, 2rem);
+    }
+}
+
+.anuncio {
+    background-color: lighten($gris, 5);
+    border: 1px solid darken($gris, 10);
+    margin-bottom: 2rem;
+
+    .contenido-anuncio {
+        padding: 2rem;
+    }
+
+    h3, p {
+        margin: 0;
+    }
+ 
+}
+.precio {
+    color: black;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+
+
+.alinear-derecha {
+    margin-right: 2rem;
+
+}
+
+@include tablet {
+    .alinear-derecha {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+}
+
+.resumen-producto {
+    text-align: center;
+    padding: 0 4rem;
+    font-size: x-large;
+}
